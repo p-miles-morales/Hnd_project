@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Form</title>
+
+    <style>
+        .container {
+            width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        h2 {
+            text-decoration: underline;
+            font-style: italic;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>AUTHENTIFICATION</h2>
+
+    <form action="process.php" method="POST">
+
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <div class="buttons">
+            <button type="submit">Submit</button>
+
+            <button type="reset">Cancel</button>
+        </div>
+
+    </form>
+
+</div>    
+</body>
+</html>
